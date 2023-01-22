@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- - ajouter devoir : clique ouvre un popup avec un formulaire comprenant une matière, une date de rendue et une description, cliquer sur modal pour la fermrer
+    - cliquer bouton devoir fait et bouton supprimer liste
+    - affiche une date de rendu quand c'est fait
+    - Ma liste se met automatiquement a jour
+    - local storage
+    - possibilité ajouter une nouvelle matière.
+    - trier mes devoirs par date de rendu, par matière, par titre, par date de rendu -->
+
+    <header>
+        <h1>Ma liste de devoirs</h1>
+        <button class="add">Ajouter un devoir</button>
+        <button class="add-matiere">Ajouter une matière</button>
+
+    </header>
+    <main>
+        <section class="modal">
+            <button class="no-submit">X</button>
+            <form class="form" action="">
+
+                <label for="titre">Titre</label>
+                <input type="text" name="titre" id="titre">
+
+                <label for="matiere">Matière</label>
+                <select name="matiere" id="matiere">
+                    <option value="Math">Math</option>
+                    <option value="Français">Français</option>
+                </select>
+
+                <label for="date">Date de rendu</label>
+                <input type="date" name="date" id="date">
+                <label for="description">Description</label>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                <button id="submit">Ajouter</button>
+            </form>
+        </section>
+        <table class="table">
+            <thead class="thead">
+                <tr>
+                    <th>Titre</th>
+                    <th>Matière</th>
+                    <th>Date de rendu</th>
+                    <th>Description</th>
+                    <th>Devoir fait</th>
+                    <th>Supprimer</th>
+                    <th class="none">Création de la tache</th>
+                </tr>
+            </thead>
+        </table>
+
+        <tbody>
+
+        </tbody>
+
+
+
+    </main>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
