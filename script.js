@@ -82,12 +82,12 @@ const renderTable = () => {
         "afterend",
         `
                   <tr class="fait">
-                    <td>${data.titre}</td>
-                    <td>${data.matiere}</td>
-                    <td>${data.date}</td>
-                    <td>${data.description}</td>
-                    <td><button onclick="fait(this)"" >Devoir fait</button></td>
-                    <td><button  onclick="deleteRow(this)">Delete</button></td>
+                    <td><p class="fait" >${data.titre}</p></td>
+                    <td><p class="fait" >${data.matiere}</p></td>
+                    <td><p class="fait" >${data.date}</p></td>
+                    <td><p class="fait" >${data.description}</p></td>
+                    <td><button class="btn-1" onclick="fait(this)"" >Devoir fait</button></td>
+                    <td><button class="btn-3" onclick="deleteRow(this)">Delete</button></td>
                     <td class="none" >${key}</td>
                       </tr>
                   `
@@ -97,12 +97,12 @@ const renderTable = () => {
         "afterend",
         `
               <tr>
-                <td>${data.titre}</td>
-                <td>${data.matiere}</td>
-                <td>${data.date}</td>
-                <td>${data.description}</td>
-                <td><button onclick="fait(this)"" >Devoir fait</button></td>
-                <td><button onclick="deleteRow(this)">Delete</button></td>
+                <td><p>${data.titre}</p></td>
+                <td><p>${data.matiere}</p></td>
+                <td><p>${data.date}</p></td>
+                <td><p>${data.description}</p></td>
+                <td><button class="btn-1" onclick="fait(this)"" >Devoir fait</button></td>
+                <td><button class="btn-3" onclick="deleteRow(this)">Delete</button></td>
                 <td class="none" >${key}</td>
                   </tr>
               `
